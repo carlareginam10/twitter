@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+
+body {
+    background:#e6ecf0;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+.nave{
+    background-color: white;
+    text-align: center; 
+    color:   blue;
+    height: 50px;
+    padding: 5px;
+
+
+}
+
+.message  {
+    display: flex;
+    justify-content:center;
+    margin-top: 1%;
+    
+}
+.msgPublish{
+   display: flex;
+   justify-content:center;
+   margin-top: 6%; 
+}
+
+.text-area {
+    border-radius: 0.8em;  
+    border: solid #A4D9F9 2px;
+
+}
+.boton{
+    display: flex;
+    justify-content:center;
+}
+
+.btnTweet{
+    border-radius: 10em;  
+    color: white;
+    background-color:#4AB3F4;
+    width: 80px;
+    height: 40px; 
+
+}
+
+.blockTweet{
+  display: flex; 
+  justify-content:space-around
+}
+
+img{
+  max-width:380px;
+  max-height:380px;
+  padding-right: 20px;
+ 
+
+}
