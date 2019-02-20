@@ -9,25 +9,29 @@
    
 </head>
 
-<section class="nave">
-    <p>Bem vindo ao Twitter</p>
-</section>
 
-<section  class="message">
-    <div class="blockTweet"> <img src="twitter.jpg" alt=""> </div>
-    <form class="blockTweet">
-        <textarea class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="3"></textarea> <br>
-        <input class='btnTweet' type="button" id='btn' value="TWEET" >
-    </form>    
-</section>
-
-<span class="msgPublish">
-    <textarea class='text-area' id="msg" cols="60" rows="3"></textarea>
-</span>
-
-
-<script src="app.js"></script>
 <body>
+    <section class="nave">
+        <p>Bem vindo ao Twitter</p>
+    </section>
     
+    <section class="message">
+        <section><img src="twitter.jpg" alt=""></section>
+    <form >        
+        <textarea onkeydown="autoResize()" onkeyup="limite_textarea(this.value)" class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="1"></textarea> <br>
+        <input class='btnTweet' type="button" id='btn' value="TWEET" >
+        <span id="cont">  140</span> 
+    </form> 
+    
+    </section>    
+     
+    <section class="hide" id="msgPublish">
+        <textarea class='text-area2' id="msg" cols="60" rows="1"></textarea>
+    </section>
+     
+   
+    
+    
+    <script src="app.js"></script>
 </body>
 </html>

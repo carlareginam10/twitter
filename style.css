@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 
-
+*{
+    margin: 0;
+}
+  
 body {
+    
     background:#e6ecf0;
     font-family: 'Open Sans', sans-serif;
     
@@ -22,41 +26,63 @@ body {
     justify-content:center;
     margin-top: 1%;
     
+    /*! margin: auto; */
 }
-.msgPublish{
-   display: flex;
-   justify-content:center;
+#msgPublish{
+   /*! display: flex; */
+   /*! justify-content:center; */
    margin-top: 6%; 
+   align-content: center;
+   margin-left: 15%;
 }
 
 .text-area {
     border-radius: 0.8em;  
     border: solid #A4D9F9 2px;
+    width:500px;
+}
+.text-area2 {
+    border-radius: 0.8em;  
+    border: solid #A4D9F9 2px;
+    width:1000px;
+}
 
+img{
+    width:380px ;
+    height:380px ;
 }
-.boton{
-    display: flex;
-    justify-content:center;
-}
+
+
 
 .btnTweet{
     border-radius: 10em;  
-    color: white;
-    background-color:#4AB3F4;
+    /*! color: white; */
+    /*! background-color:#4AB3F4; */
     width: 80px;
     height: 40px; 
 
 }
 
-.blockTweet{
-  display: flex; 
-  justify-content:space-around
-}
+
 
 img{
   max-width:380px;
-  max-height:380px;
+  max-height:280px;
   padding-right: 20px;
  
+
+}
+.hide{
+    display: none;
+  
+  }
+  
+.show{
+    display: block;
+}
+
+#cont{
+    text-align: center; 
+    color:   blue;
 
 }
