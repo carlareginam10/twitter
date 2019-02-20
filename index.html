@@ -5,33 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-   
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">   
 </head>
-
-
 <body>
-    <section class="nave">
-        <p>Bem vindo ao Twitter</p>
-    </section>
-    
+    <section class="nave"><p>Bem vindo ao Twitter</p></section>    
     <section class="message">
         <section><img src="twitter.jpg" alt=""></section>
     <form >        
-        <textarea onkeydown="autoResize()" onkeyup="limite_textarea(this.value)" class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="1"></textarea> <br>
+        <textarea onkeydown="autoResize()" onkeyup="limit_textarea(this.value)" class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="1"></textarea> <br>
         <input class='btnTweet' type="button" id='btn' value="TWEET" >
         <span id="cont">  140</span> 
-    </form> 
-    
-    </section>    
-     
+    </form>     
+    </section>      
     <section class="hide" id="msgPublish">
-        <textarea class='text-area2' id="msg" cols="60" rows="1"></textarea>
-    </section>
-     
-   
-    
-    
+        <p class='text-area2' id="msg" ></p>
+    </section>    
     <script src="app.js"></script>
 </body>
 </html>

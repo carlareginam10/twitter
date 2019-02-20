@@ -10,25 +10,34 @@ btn.disabled = !event.target.value;
 txtTweet.addEventListener("input", txtInput);
 txtTweet.dispatchEvent(new Event('input'));
 
+
 function showTweet () {
     document.getElementById("msgPublish").className="hide";
     document.getElementById("msgPublish").className="show";  
 }
-function limite_textarea(valor) {
-    quant = 140;
-    total = valor.length;
-    if(total <= quant) {
-        resto = quant - total;
-        document.getElementById('cont').innerHTML = resto;
-    if(total > 120){
-        document.getElementById('cont').innerHTML = resto;
-        resto.style.color = 'rgb(255, 0, 0)';  //não está fazendo nada
 
+function limit_textarea(value) {
+    let quantity = 140;
+    let total = value.length;
+    let rest;
+    if(total <= quantity) {
+        rest = quantity - total;
+        document.getElementById('cont').innerHTML = rest;
     }
-    } else if ( total > quant) {
-        resto = quant - total;
-        
-        document.getElementById('cont').innerHTML = resto;  
+    if(total >= 120 ){
+        rest = quantity - total;
+        document.getElementById('cont').innerHTML =  rest;
+        document.getElementById('cont').style.color = 'rgb(153,204,50)'
+        console.log("entrou no verde")
+    }if(total >= 130 ){
+        rest = quantity - total;
+        document.getElementById('cont').innerHTML =  rest;
+        document.getElementById('cont').style.color = 'rgb(255, 0, 0)'
+        console.log("entrou no vermelho")
+      
+    } else if ( total > quantity) {
+        rest = quantity - total;        
+        document.getElementById('cont').innerHTML = rest;  
         //document.getElementById('msg').value = valor.substr(0,quant);
     }
 }
@@ -51,14 +60,18 @@ function getTweet(){
 function publish() {
 
     texTweet = document.getElementById("tweet").value;
+    
 
     if(texTweet.length >= 1 && texTweet.length <=140){
-     document.getElementById("msg").innerHTML = texTweet;
-       
+        let p= document.createElement('p');
+        let txtP = document.createTextNode(texTweet);
+        p.appendChild(txtP);
+        document.getElementById('msgPublish').appendChild(p);
+        showTweet ();    
     }else{
-        document.getElementById("btn").disabled = true;
+       document.getElementById("btn").disabled = true;
     }
-    showTweet ();
+    
 };
 window.onload = getTweet;
   

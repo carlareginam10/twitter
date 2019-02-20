@@ -5,35 +5,34 @@
 }
   
 body {
-    
     background:#e6ecf0;
     font-family: 'Open Sans', sans-serif;
-    
-    
 }
-.nave{
+
+.nave {
     background-color: white;
     text-align: center; 
     color:   blue;
     height: 50px;
     padding: 5px;
-
-
+    margin-top: 10px;
 }
 
-.message  {
+.message {
     display: flex;
     justify-content:center;
     margin-top: 1%;
-    
-    /*! margin: auto; */
 }
+
 #msgPublish{
-   /*! display: flex; */
-   /*! justify-content:center; */
    margin-top: 6%; 
    align-content: center;
    margin-left: 15%;
+   margin-right: 15%;
+   background-color: white;
+   /*! border-radius: 0.8em; */
+   border: solid #A4D9F9 2px;
+   border-radius: 0.4em;
 }
 
 .text-area {
@@ -41,41 +40,24 @@ body {
     border: solid #A4D9F9 2px;
     width:500px;
 }
-.text-area2 {
-    border-radius: 0.8em;  
-    border: solid #A4D9F9 2px;
-    width:1000px;
-}
-
-img{
-    width:380px ;
-    height:380px ;
-}
 
 
 
 .btnTweet{
     border-radius: 10em;  
-    /*! color: white; */
-    /*! background-color:#4AB3F4; */
     width: 80px;
     height: 40px; 
-
 }
-
-
 
 img{
   max-width:380px;
   max-height:280px;
   padding-right: 20px;
- 
+ }
 
-}
 .hide{
     display: none;
-  
-  }
+    }
   
 .show{
     display: block;
@@ -84,5 +66,5 @@ img{
 #cont{
     text-align: center; 
     color:   blue;
-
+    margin-left: 388px;
 }
