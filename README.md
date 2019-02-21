@@ -3,6 +3,14 @@ Esse projeto se trata de um exercício do curso de Front-Ent da Laboratória.
 ## Objetivo
 Replicar o feed de notícias do Twitter
 ## Critérios
+
+Versão 0.0.1
+
+    Crie um formulário que permita inserir um texto e um botão para "twittar".
+    Adicione um evento de click ao botão ou de submit no formulário.
+    No evento, obter o texto.
+    Adicione o texto ao HTML.
+
 Versão 0.0.2
 
     Não inserir texto vazio (desativar o botão "twittar").
@@ -26,7 +34,7 @@ Versão 0.0.5 (Hacker edition)
 Versão 0.0.6 (Hacker edition)
 
     Adicione a hora em que o tweet foi publicado no formato de 24 horas hh:mm.
-    
+
 ## Considerações gerais
 
 A lógica do projeto foi implementada em JavaScript.
