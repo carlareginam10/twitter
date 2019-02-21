@@ -1,6 +1,8 @@
 
 document.getElementById("btn").addEventListener("click", publish);
 document.getElementById("tweet").addEventListener("keyup", limit_textarea);
+
+  
    
 function btnEnable(btn){
     btn.disabled = false;
@@ -19,29 +21,25 @@ function limit_textarea() {
     texTweet = document.getElementById("tweet").value; 
     let quantity = 140;
     let tweet = texTweet.length;
-    let rest;
-
-   
+    let rest;  
+       
     if(tweet > 140 || tweet === 0){
          btnDesable(btn);
     }
+    
     if(tweet >=1 && tweet <=140 ){
         btnEnable(btn);        
    }
 
-
-    if(tweet <= 140) {
-        rest = quantity - tweet;
-        document.getElementById('cont').innerHTML = rest;    
+    rest = quantity - tweet;
+    document.getElementById('cont').innerHTML = rest;
+    if(rest >20){
+    document.getElementById('cont').style.color = 'rgb(0,0,255)'
     }
-    if(tweet >= 120 ){
-        rest = quantity - tweet;
-        document.getElementById('cont').innerHTML =  rest;
-        document.getElementById('cont').style.color = 'rgb(153,204,50)'
+    if(rest <=20){
+     document.getElementById('cont').style.color = 'rgb(153,204,50)'
     }
-    if(tweet >= 130 ){
-        rest = quantity - tweet;
-        document.getElementById('cont').innerHTML =  rest;
+    if(rest <=10){
         document.getElementById('cont').style.color = 'rgb(255, 0, 0)'
     }
    
@@ -63,8 +61,6 @@ function publish() {
     msgPublish.appendChild(time);
 
     texTweet = document.getElementById("tweet").value; 
-    // let space = document.createElement('section');
-    // msgPublish.appendChild(space);  
     let paragraph= document.createElement('article');
     let txtParagraph = document.createTextNode(texTweet);
     paragraph.appendChild(txtParagraph);
