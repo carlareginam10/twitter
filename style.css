@@ -5,7 +5,7 @@
 }
   
 body {
-    background:#e6ecf0;
+    background-image: url('papel_de_parede_passaros.jpg');
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,28 +25,37 @@ body {
 }
 
 #msgPublish{
-   margin-top: 6%; 
+   margin-top: 10%; 
    align-content: center;
-   margin-left: 15%;
-   margin-right: 15%;
+   margin-left: 31%;
+   margin-right: 31%;
    background-color: white;
-   /*! border-radius: 0.8em; */
-   border: solid #A4D9F9 2px;
    border-radius: 0.4em;
 }
 
 .text-area {
-    border-radius: 0.8em;  
-    border: solid #A4D9F9 2px;
+    border-radius: 0.4em;  
     width:500px;
+    color: #1E90FF;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+
+p {
+    color:grey;
+    font-size: 0.8em;
+}
+
+article {
+    color: blue
 }
 
 
-
 .btnTweet{
-    border-radius: 10em;  
+    border-radius: 0.87em;  
     width: 80px;
     height: 40px; 
+    background-color: #87CEEB;
 }
 
 img{

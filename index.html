@@ -3,23 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Twitter</title>
+    <title>Twitter</title>  
+    <link rel="shortcut icon" href="favicon.ico" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">   
 </head>
 <body>
-    <section class="nave"><p>Bem vindo ao Twitter</p></section>    
+    <section class="nave"> <img src="iconsTwitter.png" > </section>    
     <section class="message">
-        <section><img src="twitter.jpg" alt=""></section>
     <form >        
-        <textarea onkeydown="autoResize()" onkeyup="limit_textarea(this.value)" class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="1"></textarea> <br>
-        <input class='btnTweet' type="button" id='btn' value="TWEET" >
+        <textarea  class='text-area' placeholder="What's happening?" id="tweet" cols="50" rows="1"></textarea> <br>
+        <input class='btnTweet' type="button" id='btn' value="TWEET" disabled >
         <span id="cont">  140</span> 
     </form>     
     </section>      
     <section class="hide" id="msgPublish">
-        <p class='text-area2' id="msg" ></p>
-    </section>    
+        <p  id="time"></p>
+        <article id="msg"> </article>        
+    </section> 
+    <script src="moment.js"></script>  
     <script src="app.js"></script>
 </body>
 </html>
